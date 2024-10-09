@@ -554,7 +554,7 @@
                                 <input type="hidden" name="kode" value="<?php echo $id;?>"/>
                                 <input type="hidden" value="<?php echo $photo;?>" name="gambar">
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">NIP</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">NPK/PEG-ID</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xnis" value="<?php echo $nis;?>" class="form-control" id="inputUserName" placeholder="NIP" required>
                                         </div>

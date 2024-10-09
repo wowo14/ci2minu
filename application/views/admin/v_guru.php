@@ -1,43 +1,29 @@
-
 <div id="content">
-
-        
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-          
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-
-          
-          
-
         </nav>
-        
 <div class="container-fluid">
-
-         
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary"><?php echo isset($breadcrumb) ? $breadcrumb : ''; ?></h6>
             </div>
             <div class="card-body">
-                
             <div class="box-header">
               <a href="" class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Tambah Data Guru</a>
             </div><br>
-                
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                 <tr>
           					<th>Photo</th>
-          					<th>NIP</th>
+          					<th>NPK/PEG-ID</th>
           					<th>Nama</th>
           					<th>Tempat/Tgl Lahir</th>
           					<th>Jenis Kelamin</th>
-                    <th>Mata Pelajaran</th>
+                    <th>Jabatan</th>
                     <th style="text-align:right;">Aksi</th>
                 </tr>
                 </thead>
@@ -54,7 +40,6 @@
           					   $tgl_lahir=$i['guru_tgl_lahir'];
                        $mapel=$i['guru_mapel'];
                        $photo=$i['guru_photo'];
-
                     ?>
                 <tr>
                   <?php if(empty($photo)):?>
@@ -72,35 +57,27 @@
                   <?php endif;?>
                   <td><?php echo $mapel;?></td>
                   <td style="text-align:right;">
-                        
-                      
                       <a href="#" class="btn btn-info btn-icon-split" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>">
                         <span class="icon text-white-50">
                           <i class="fas fa-info-circle"></i>
                         </span>
                         <span class="text">Edit</span>
                       </a>
-                      
                       <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>">
                         <span class="icon text-white-50">
                           <i class="fas fa-trash"></i>
                         </span>
                         <span class="text">Hapus</span>
                       </a>
-                        
                   </td>
                 </tr>
 				<?php endforeach;?>
                 </tbody>
               </table>
-                
-                  
               </div>
             </div>
           </div>
-
         </div>
-   
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -110,21 +87,18 @@
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/guru/simpan_guru'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">NIP</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">NPK/PEG-ID</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xnip" class="form-control" id="inputUserName" placeholder="NIP" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xnama" class="form-control" id="inputUserName" placeholder="Nama" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Jenis Kelamin</label>
                                         <div class="col-sm-7">
@@ -138,36 +112,30 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tempat Lahir</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xtmp_lahir" class="form-control" id="inputUserName" placeholder="Tempat Lahir" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tanggal Lahir</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xtgl_lahir" class="form-control" id="inputUserName" placeholder="Contoh: 25 September 1993" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Mata Pelajaran</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xmapel" class="form-control" id="inputUserName" placeholder="Contoh: PPKN, Matematika" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
                                         <div class="col-sm-7">
                                             <input type="file" name="filefoto"/>
                                         </div>
                                     </div>
-
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
@@ -177,8 +145,6 @@
                 </div>
             </div>
         </div>
-    
-    
 <?php foreach ($data->result_array() as $i) :
               $id=$i['guru_id'];
               $nip=$i['guru_nip'];
@@ -189,7 +155,6 @@
               $mapel=$i['guru_mapel'];
               $photo=$i['guru_photo'];
             ?>
-
         <div class="modal fade" id="ModalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -202,19 +167,17 @@
                                 <input type="hidden" name="kode" value="<?php echo $id;?>"/>
                                 <input type="hidden" value="<?php echo $photo;?>" name="gambar">
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">NIP</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">NPK/PEG-ID</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xnip" value="<?php echo $nip;?>" class="form-control" id="inputUserName" placeholder="NIP" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xnama" value="<?php echo $nama;?>" class="form-control" id="inputUserName" placeholder="Nama" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Jenis Kelamin</label>
                                         <div class="col-sm-7">
@@ -239,35 +202,30 @@
                                           <?php endif;?>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tempat Lahir</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xtmp_lahir" value="<?php echo $tmp_lahir;?>" class="form-control" id="inputUserName" placeholder="Tempat Lahir" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tanggal Lahir</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xtgl_lahir" value="<?php echo $tgl_lahir;?>" class="form-control" id="inputUserName" placeholder="Contoh: 25 September 1993" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Mata Pelajaran</label>
                                         <div class="col-sm-7">
                                             <input type="text" name="xmapel" value="<?php echo $mapel;?>" class="form-control" id="inputUserName" placeholder="Contoh: PPKN, Matematika" required>
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
                                         <div class="col-sm-7">
                                             <input type="file" name="filefoto"/>
                                         </div>
                                     </div>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
@@ -278,8 +236,6 @@
             </div>
         </div>
   <?php endforeach;?>
-
-    
     <?php foreach ($data->result_array() as $i) :
               $id=$i['guru_id'];
               $nip=$i['guru_nip'];
@@ -303,7 +259,6 @@
 							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
                      <input type="hidden" value="<?php echo $photo;?>" name="gambar">
                             <p>Apakah Anda yakin mau menghapus guru <b><?php echo $nama;?></b> ?</p>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
@@ -314,8 +269,6 @@
             </div>
         </div>
 	<?php endforeach;?>
-    
-    
 <?php if($this->session->flashdata('msg')=='error'):?>
         <script type="text/javascript">
                 $.toast({
@@ -328,7 +281,6 @@
                     bgColor: '#FF4859'
                 });
         </script>
-
     <?php elseif($this->session->flashdata('msg')=='success'):?>
         <script type="text/javascript">
                 $.toast({
@@ -366,5 +318,4 @@
                 });
         </script>
     <?php else:?>
-
     <?php endif;?>

@@ -1,7 +1,6 @@
 <footer class="footer">
         <div class="footer_top">
             <div class="container">
-                
                 <div class="row">
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
@@ -43,29 +42,24 @@
                             <h3 class="footer_title">
                                 Kontak Kami
                             </h3>
-                            
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                
-                                <p>MURIS STUDIO</p>
+                                <p>MINUWARU 1</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                
-                                <p>Call : 0857 9969 6924</p>
+                                <p>Call : (031) 8546568</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                
-                                <p>suryaciptainformatika@gmail.com</p>
+                                <p>minuwarusatu@gmail.com</p>
                             </div>
                         </div>
-                    
                         </div>
                     </div>
                 </div>
@@ -86,8 +80,6 @@
         </div>
     </footer>
     <!-- footer end  -->
-
-
     <!-- JS here -->
     <script src="<?php echo base_url('');?>style/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="<?php echo base_url('');?>style/js/vendor/jquery-1.12.4.min.js"></script>
@@ -107,7 +99,6 @@
     <script src="<?php echo base_url('');?>style/js/jquery.magnific-popup.min.js"></script>
     <script src="<?php echo base_url('');?>style/js/plugins.js"></script>
     <script src="<?php echo base_url('');?>style/js/gijgo.min.js"></script>
-
     <!--contact js-->
     <script src="<?php echo base_url('');?>style/js/contact.js"></script>
     <script src="<?php echo base_url('');?>style/js/jquery.ajaxchimp.min.js"></script>
@@ -122,7 +113,5 @@
               });
             </script>
     <script src="<?php echo base_url('');?>style/js/main.js"></script>
-
 </body>
-
 </html>
