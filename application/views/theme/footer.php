@@ -72,7 +72,7 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://suryaciptainformatika.com/" target="_blank">Sekolah Teknologi Muris</a> | Distributed by <a href="https://blogbugabagi.blogspot.com" target="_blank" rel="noopener noreferrer" style="color:azure">BlogBugaBagi</a></p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://minuwaru1.sch.id/" target="_blank">MINUWARU 1</a> | Distributed by <a href="https://blogbugabagi.blogspot.com" target="_blank" rel="noopener noreferrer" style="color:azure">BlogBugaBagi</a></p>
                         </p>
                     </div>
                 </div>

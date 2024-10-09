@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                                <h1 class="text-center text-white">SEKOLAH TEKNOLOGI MURIS </h1>
+                                <h1 class="text-center text-white">MINUWARU 1 </h1>
                                 <h2 class="text-center text-white">Memajukan Dunia Pendidikan Menggunakan Teknologi </h2>
                             </div>
                         </div>
@@ -14,6 +14,6 @@
                 </div>
             </div>
             <!--/ single_carouse -->
-            
+
         </div>
     </div>

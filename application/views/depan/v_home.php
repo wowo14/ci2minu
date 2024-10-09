@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                                <h1 class="text-center text-white">SEKOLAH TEKNOLOGI MURIS </h1>
+                                <h1 class="text-center text-white">MINUWARU 1 </h1>
                                 <h2 class="text-center text-white">Memajukan Dunia Pendidikan Menggunakan Teknologi </h2>
                             </div>
                         </div>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <!--/ single_carouse -->
-            
+
         </div>
     </div>
 
@@ -32,14 +32,14 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
                         <h3 class="mb-45">Berita Sekolah</h3>
-                        
+
                     </div>
                 </div>
             </div>
             <div class="row">
-                
-                
-                
+
+
+
                 <?php foreach ($berita->result() as $row) :?>
                 <div class="col-md-6">
                     <div class="single__news">
@@ -54,15 +54,15 @@
                                 <h4><?php echo $row->tulisan_judul;?></h4>
                             </a>
                             <p><?php echo limit_words($row->tulisan_isi,10).'...';?></p>
-                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> <?php echo $row->tanggal;?></span> 
-                            
+                            <p class="d-flex align-items-center"> <span><i class="flaticon-calendar-1"></i> <?php echo $row->tanggal;?></span>
+
                             <span> <i class="flaticon-comment"></i> 01 comments</span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <?php endforeach;?>
-                
+
             </div>
         </div>
     </div>
@@ -78,14 +78,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="row">
-                        
-                        
-                
-                
+
+
+
+
                         <?php foreach ($pengumuman->result() as $row) :?>
                         <div class="col-lg-4 col-md-6">
                             <div class="single__program">
@@ -101,14 +101,14 @@
                             </div>
                         </div>
                         <?php endforeach;?>
-                        
-                        
-                        
+
+
+
                     </div>
                 </div>
-                
-                
-                
+
+
+
             </div>
 
             <div class="row">
@@ -123,7 +123,7 @@
     <!-- popular_program_area_end -->
 
     <!-- latest_coures_area_start  -->
-    
+
     <!--/ latest_coures_area_end -->
 
     <!-- recent_event_area_strat  -->
@@ -133,14 +133,14 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="section_title text-center mb-70">
                         <h3 class="mb-45">Agenda Sekolah</h3>
-                        
+
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    
-                    
+
+
                     <?php foreach ($agenda->result() as $row):?>
                     <div class="single_event d-flex align-items-center">
                         <div class="date text-center">
@@ -159,4 +159,3 @@
             </div>
         </div>
     </div>
-    
